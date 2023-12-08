@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AZURE_WEBAPP_NAME: CiCdAzureWebApiTest
+  AZURE_WEBAPP_NAME: CiCdAzureWebAppTest
   AZURE_WEBAPP_PACKAGE_PATH: "./publish"
   PROJECT_FOLDER: ./CiCdAzureWebApi
   TARGET_FRAMEWORK: net8.0
