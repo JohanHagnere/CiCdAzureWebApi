@@ -9,7 +9,9 @@ on:
 env:
   AZURE_WEBAPP_NAME: CiCdAzureWebApiTest
   AZURE_WEBAPP_PACKAGE_PATH: "./publish"
-
+  PROJECT_FOLDER: ./CiCdAzureWebApi
+  TARGET_FRAMEWORK: net8.0
+  
 jobs:
   build:
 
@@ -34,4 +36,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.CICDAZUREDEPLOYTEST }}
-        package: "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+        package: ${{ env.PROJECT_FOLDER}}/bin/Release/${{env.TARGET_FRAMEWORK}}/publish
