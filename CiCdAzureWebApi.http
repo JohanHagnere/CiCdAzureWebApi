@@ -1,0 +1,6 @@
+@CiCdAzureWebApi_HostAddress = http://localhost:5153
+
+GET {{CiCdAzureWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
