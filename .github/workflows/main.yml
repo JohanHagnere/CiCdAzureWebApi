@@ -30,7 +30,7 @@ jobs:
     - name: Test
       run: dotnet test ./CiCdAzureWebApi.sln --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish ./CiCdAzureWebApi.sln --configuration Release --no-build
+      run: dotnet publish ./CiCdAzureWebApi.sln --configuration Release
     - name: Deployment
       uses: azure/webapps-deploy@v2
       with:
